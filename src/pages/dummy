@@ -1,0 +1,133 @@
+import React from 'react'
+import { Button } from '@/components/ui/button'
+import { Select,SelectContent,SelectItem,SelectTrigger,SelectValue } from '@/components/ui/select'
+
+const Right1_bottom = () => {
+  return (
+    <div >
+        <div className='flex flex-col gap-3 mb-5'>
+          <Select>
+            <SelectTrigger className="w-full h-7 border-gray-300 rounded-lg font-sans text-[12px] pl-3 pr-3 py-3">
+              <SelectValue placeholder="Bengaluru"/>
+            </SelectTrigger>
+          </Select>
+
+          <Select>
+          <SelectTrigger className="w-full h-7 border-gray-300 rounded-lg font-sans text-[12px] pl-3 pr-3 py-3">
+            <SelectValue placeholder="Your blood type" />
+          </SelectTrigger>
+          <SelectContent>
+            <SelectItem value="o+">O+</SelectItem>
+            <SelectItem value="a+">A+</SelectItem>
+            <SelectItem value="b+">B+</SelectItem>
+          </SelectContent>
+        </Select>
+      </div>
+
+      <Button className="w-full h-7 py-5 bg-red-600 hover:bg-red-700 text-white text-[14px] font-bold rounded-xl transition-colors ">
+        Find Banks
+      </Button>
+
+      <div className="flex items-center gap-4">
+        <div className="h-px flex-1 bg-gray-200"></div>
+        <span className="text-gray-400 text-[12px] font-sans my-8">or</span>
+        <div className="h-px flex-1 bg-gray-200"></div>
+      </div>
+
+      <Button className="w-full h-7 py-5 mb-14 bg-black hover:bg-gray-900 text-white text-[14px] font-bold rounded-xl border-2 border-black transition-colors">
+        Login
+      </Button>
+
+    </div>
+  )
+}
+
+export default Right1_bottom
+
+
+
+///////////////////////// Form Page /////////////////////////////////////////
+
+
+import React from 'react'
+import { Input } from "@/components/ui/input"
+import {Button} from '@/components/ui/button'
+import Nextchev from '@/assets/Nextchevron.svg'
+
+const Right3_bottom = () => {
+  return (
+    <div className="flex flex-col gap-8 pr-2 pb-5">
+      
+      {/* --- STEPPER SECTION --- */}
+      <div className="flex items-center w-full max-w-sm">
+        
+        <div className="flex items-center justify-center w-6 h-6 rounded-full bg-[#E11D1D] text-white text-[12px] font-bold shrink-0">
+          1
+        </div>
+        
+        
+        <div className="flex-1 h-0.5 bg-gray-200 mx-2" />
+        
+        
+        <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 text-gray-400 text-[12px] font-bold shrink-0">
+          2
+        </div>
+        
+        
+        <div className="flex-1 h-0.5 bg-gray-200 mx-2" />
+        
+        
+        <div className="flex items-center justify-center w-6 h-6 rounded-full bg-gray-200 text-gray-400 text-[12px] font-bold shrink-0">
+          3
+        </div>
+      </div>
+
+      {/* --- FORM SECTION --- */}
+      <form className="flex flex-col gap-6 w-full max-w-md">
+        
+        {/* Full Name */}
+        <div className="flex flex-col gap-2">
+          <label className="text-[12px] font-normal text-black">Full Name</label>
+          <Input  
+            className="bg-[#fafafa] border-[1.5px] border-[#d7d7d7] h-9 rounded-sm px-4 focus-visible:ring-1 focus-visible:ring-red-200 text-[12px] text-[#737373]"
+          />
+        </div>
+
+        {/* Phone Number */}
+        <div className="flex flex-col gap-2">
+          <label className="text-[12px] font-normal text-black">Phone Number</label>
+          <Input 
+            type="tel"
+            className="bg-[#fafafa] border-[1.5px] border-[#d7d7d7] h-9 rounded-sm px-4 focus-visible:ring-1 focus-visible:ring-red-200 text-[12px] text-[#737373]"
+          />
+        </div>
+
+        {/* Address */}
+        <div className="flex flex-col gap-2">
+          <label className="text-[12px] font-normal text-black">Address</label>
+          <Input 
+            className="bg-[#fafafa] border-[1.5px] border-[#d7d7d7] h-9 rounded-sm px-4 focus-visible:ring-1 focus-visible:ring-red-200 text-[12px] text-[#737373]"
+          />
+        </div>
+
+        <Button className="h-10 mt-6 py-5 border-3 bg-black shadow-lg border-gray-500 hover:bg-black active:scale-97 transition-all">
+          Next
+          <img src={Nextchev} alt="right arrow" className=' ml-1 h-2 w-2' />
+        </Button>
+
+
+      </form>
+    </div>
+  )
+}
+
+export default Right3_bottom
+
+
+-------------------------------------------------------------
+
+<MarkerContent>
+                 <div className={`w-4 h-4 rounded-full border-2 border-white shadow-md transition-all ${
+                   isMatch ? 'bg-[#E11D1D] scale-125' : 'bg-gray-400'
+                 }`} />
+              </MarkerContent>
