@@ -1,16 +1,15 @@
-# React + Vite
+# LifeDrop - Blood Donation Locator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern React application helping users find blood banks and hospitals in Bengaluru with real-time stock needs.
 
-Currently, two official plugins are available:
+### Features
+- Interactive Mapping: Visualizes hospital locations using MapLibre/Mapcn.
+- Smart Filtering: Highlights hospitals that match the user's specific blood type.
+- Dynamic UX: Smooth "fly-to" animations and location-aware state management.
+- Responsive Design: Fully styled with Tailwind CSS for a premium feel.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Tech Stack
+- Frontend: React (Vite), Tailwind CSS
+- Mapping: Mapcn / MapLibre GL
+- State: React Context API (Auth & Map state)
+- Icons: Lucide React
